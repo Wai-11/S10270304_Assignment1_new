@@ -1,0 +1,840 @@
+/* General Reset */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+header, main, footer {
+  width: 100%;
+}
+
+.section-1, .section-2 {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 2.12;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* CSS */   /*phone compatible*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+  
+  /* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: relative; /* Allows centering of the logo */
+  }
+  
+  .header .branding {
+    flex: 1; /* Pushes content to the far left */
+  }
+  
+  .header .branding p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .header .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .header .logo img {
+    height: 68px;
+    width: 75px;
+  }
+  
+  .header .nav {
+    display: flex;
+    flex: 1; /* Pushes navigation to the far right */
+    justify-content: flex-end;
+  }
+  
+  .nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+  }
+  
+  /* Section 1 */
+  .section-1 {
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: flex-start; /* Aligns content to the left */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    background: url("./images/v2bayliss1.png") no-repeat center center;
+    background-size: cover; /* Ensures the background image covers the section */
+    padding: 0 2rem; /* Adds spacing to the left/right for text */
+    position: relative;
+    margin: 0;
+  }
+  
+  
+  /* Text and Button Styling for Section 1 */
+  .section-1 .text {
+    color: white;
+    max-width: 50%; /* Limits the width of the text */
+    z-index: 2; /* Ensures the text stays visible over the image */
+  }
+
+  h1 {
+    color: red;
+  }
+  
+  h2 {
+    color: rgb(1, 159, 56);
+  }
+
+  .section-1 .text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-1 .text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #d32f2f;
+  }
+  
+  .section-1 .text p {
+    margin-bottom: 1rem;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: #d32f2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .button:hover {
+    background-color: #b71c1c;
+  }
+  
+  /* Section 2 */
+  .section-2 {
+    display: flex;
+    align-items: center; /* Vertically centers content */
+    justify-content: flex-start; /* Aligns content to the left */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    background: url("./images/v4sup.png") no-repeat center center;
+    background-size: cover; /* Ensures the background image covers the section */
+    padding: 0 2rem; /* Adds spacing to the left/right for text */
+    position: relative;
+    margin: 0;
+  }
+
+  .section-1, .section-2 {
+    background-size: cover;  /* Ensures background image fills the section */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition */
+  }
+
+  
+
+  .section-1 img, .section-2 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+  
+  /* Text and Button Styling for Section 2 */
+  .section-2 .text {
+    color: white;
+    max-width: 50%; /* Limits the width of the text */
+    z-index: 2; /* Ensures text is visible over the background image */
+  }
+  
+  .section-2 .text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-2 .text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #d32f2f;
+  }
+  
+  .section-2 .text p {
+    margin-bottom: 1rem;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: #d32f2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .button:hover {
+    background-color: #b71c1c;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: black;
+    color: white;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 120%; /* Adjust width as needed */
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ducatilogo {
+    height: 120px; /* Adjust the height as needed */
+    margin-bottom: 10px;
+}
+
+.audi-group {
+    font-size: 14px;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included within the width */
+  }
+
+
+   /*model page*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.models {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.model {
+    width: 48%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.model img {
+    width: 100%;
+    height: 400px; /* Maintain aspect ratio */
+    max-height: 300px; /* Set a maximum height */
+    object-fit: cover; /* Crop images to fit the container */
+}
+
+.discover-more {
+    display: inline-block;
+    background-color: #b71c1c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container img {
+    margin-bottom: 10px;
+}
+
+/* information page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    color: #b71c1c;
+    font-size: 25px;
+}
+
+h5{
+    font-size: 20px;
+}
+/* Product Page Styles */
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.details {
+    flex: 1;
+    padding: 20px;
+}
+
+.details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.details p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.details ul {
+    font-size: 1em; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height as needed */
+}
+
+.details li {
+    margin-bottom: 10px;
+}
+
+.details button {
+    background-color: #f40d0d;
+    color: #fff;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Design (Optional) */
+@media (max-width: 768px) {
+    .product-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-left img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.details {
+    text-align: left; /* Align text to the left */
+}
+
+/*cart page*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h6{
+    text-align: center;
+    font-size: 25px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-item img {
+    width: 80vh; /* Adjust the image width as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.total {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.total button {
+    background-color: #fa1313;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*testride page*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],  
+
+input[type="date"],
+input[type="email"] 
+ {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #f71b1b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius:  
+ 5px;
+    cursor: pointer; 
+
+}
+
+/*dealer page*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.dealer-info {
+    margin-bottom: 20px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Create two equal columns */
+    grid-template-rows: auto 1fr; /* First row for the map, second row for the showroom */
+    gap: 20px;
+}
+
+.image-container {
+    grid-row: 1 / span 2; /* Make the map image span two rows */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*sign in page*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    width: 300px; /* Adjust width as needed */
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Ensure full viewport height and width on mobile */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Section Styles */
+  .section-1, .section-2 {
+    display: flex;
+    justify-content: left;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 2rem;
+  }
+  
+  .section-1 .text, .section-2 .text {
+    color: white;
+    max-width: 50%;
+    z-index: 2;
+    text-align: left;
+  }
+  
+  h1, h2 {
+    color: white;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  /* Button Styling */
+  .button {
+    padding: 0.7rem 1.5rem;
+    background-color: #d32f2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .button:hover {
+    background-color: #b71c1c;
+  }
+  
+  /* Footer Styles */
+  footer {
+    width: 100%;
+    background-color: #000;
+    padding: 1rem 0;
+  }
+  
+  .footer-container {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-column {
+    color: white;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Media Queries for Smaller Screens */
+  @media (max-width: 768px) {
+    /* Adjust the text container to take up more space on smaller screens */
+    .section-1 .text, .section-2 .text {
+      max-width: 100%;
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    /* Adjust header text for mobile */
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    /* Make button larger for easier tapping */
+    .button {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+    }
+  
+    /* Adjust footer layout for mobile */
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-column {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Further reduce the font sizes on very small screens */
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1rem;
+    }
+  
+    /* Adjust button size for very small screens */
+    .button {
+      padding: 0.7rem 1.2rem;
+      font-size: 1rem;
+    }
+  
+    .footer-column li {
+      font-size: 0.9rem;
+    }
+  }
+
+
+  /* Ensure all images scale properly within their containers */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* This will preserve the aspect ratio */
+  }
+  
+  /* Specifically for background images in sections */
+  .section-1, .section-2 {
+    background-size: cover; /* Ensure the background image covers the full area */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* If you want to apply this rule only to images inside a specific container */
+  .section-1 img, .section-2 img {
+    width: 100%; /* Make sure the images take up 100% of the container's width */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  /* Default header styles (for larger screens) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .nav a {
+    margin: 0 15px;
+  }
+  
+  /* Mobile-specific styles */
+  @media (max-width: 768px) {
+    /* Stack logo and navigation items vertically */
+    .header {
+      flex-direction: column;
+      align-items: flex-start; /* Aligns logo and links to the left */
+      padding: 20px;
+    }
+  
+    .logo img {
+      max-width: 80%; /* Reduce logo size on mobile */
+      height: auto;
+    }
+  
+    .nav {
+      display: flex;
+      flex-direction: column; /* Stack the nav items vertically */
+      align-items: flex-start; /* Left-align the nav items */
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .nav a {
+      margin: 5px 0; /* Add margin between links */
+    }
+  }
+
+  img {
+    max-width: 100%; /* Ensures images never overflow */
+    height: auto; /* Maintains aspect ratio */
+  }
