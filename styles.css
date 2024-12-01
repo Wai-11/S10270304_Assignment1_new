@@ -838,3 +838,8 @@ img {
     max-width: 100%; /* Ensures images never overflow */
     height: auto; /* Maintains aspect ratio */
   }
+
+
+ .hidden {
+    display: none;
+}
