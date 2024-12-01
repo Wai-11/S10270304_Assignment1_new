@@ -1,18 +1,23 @@
-// sign in
-const form = document.querySelector('form');
+// Select the login form and message element
+const loginForm = document.getElementById('loginForm');
+const message = document.getElementById('message');
 
-form.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevent default form submission
+// Add event listener to handle form submission
+loginForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting
 
-    // Get form data
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+    // Get the user's email and password
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value.trim();
 
-    // Perform login logic (e.g., send data to server, validate credentials)
-    console.log('Email:', email);
-    console.log('Password:', password);
-
-    // Redirect to the appropriate page or display error messages
-    // ...
+    // Check if both fields are filled
+    if (email && password) {
+        // Display success message
+        message.textContent = `Welcome, ${email}! You have logged in successfully.`;
+        message.style.color = 'green';
+    } else {
+        // Display error message
+        message.textContent = 'Please fill in both fields!';
+        message.style.color = 'red';
+    }
 });
-
