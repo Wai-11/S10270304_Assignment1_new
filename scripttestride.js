@@ -1,28 +1,24 @@
-
-  const form = document.querySelector('form');
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('testRideForm');
+  const confirmationMessage = document.getElementById('confirmationMessage');
+  const userNameSpan = document.getElementById('userName');
+  const userEmailSpan = document.getElementById('userEmail');
 
   form.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevent default form submission
+      event.preventDefault(); // Prevent the form from submitting to a server
 
-    // Get form values
-    const family = document.getElementById('family').value;
-    const model = document.getElementById('model').value;
-    const name = document.getElementById('name').value;
-    const country = document.getElementById('country').value;
-    const postalCode = document.getElementById('postalCode').value;
-    const phoneNumber = document.getElementById('phoneNumber').value;
-    const dateOfRiding = document.getElementById('dateOfRiding').value;
-    const email = document.getElementById('email').value;
+      // Get user inputs
+      const userName = document.getElementById('name').value;
+      const userEmail = document.getElementById('email').value;
 
-    // Basic validation (you can add more complex validation as needed)
-    if (family === '' || model === '' || name === '' || country === '' || postalCode === '' || phoneNumber === '' || dateOfRiding === '' || email === '') {
-      alert('Please fill in all required fields.');
-      return;
-    }
+      // Update confirmation message
+      userNameSpan.textContent = userName;
+      userEmailSpan.textContent = userEmail;
 
-    // If validation passes, submit the form or perform other actions
-    form.submit(); // Uncomment to submit the form
+      // Show confirmation message
+      confirmationMessage.classList.remove('hidden');
 
-    // Alternatively, you can send the form data to a server using AJAX or other techniques
-    // ...
+      // Optionally clear the form
+      form.reset();
   });
+});
